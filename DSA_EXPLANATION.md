@@ -1,17 +1,18 @@
-# DSA
-
 # BinarySearch:
-O(log n), или логарифмическое время. Пример: бинарный поиск.
-
-### 1.1 Имеется отсортированный список из 128 имен, и вы ищете в нем значение методом бинарного поиска. Какое максимальное количество проверок для этого может потребоваться?
-
-128 = 2*2*2*2*2*2*2 = 128 
-
-### 1.2 Предположим, размер списка увеличился вдвое. Как изменится максимальное количество проверок?»
-
-256 = 2*2*2*2*2*2*2*2 = 256
+* Compare x with the middle element.
+* If x matches with the middle element, we return the mid index.
+* Else If x is greater than the mid element, then x can only lie in the right half subarray after the mid element. So we recur for the right half.
+* Else (x is smaller) recur for the left half.
+#### Time Complexity: O (log n)
 
 # Selection Sort:
 * One loop to select an element of Array one by one = O(N)
 * Another loop to compare that element with every other Array element = O(N)
 * result: O(N) * O(N) = O(N*N) = O(N^2)
+#### not stable sorting algorithm
+
+# Insertion Sort:
+* One loop to select an element of Array one by one = O(N)
+* Another loop to compare that element with every other Array element = O(N)
+* result: O(N) * O(N) = O(N*N) = O(N^2)
+#### stable sorting algorithm

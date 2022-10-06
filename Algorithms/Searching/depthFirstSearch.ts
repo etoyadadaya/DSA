@@ -37,7 +37,7 @@ const depthFirstSearch = (graph: any, start: any): any => {
         []
     }
 
-    return Array.from(visited);
+    return visited;
 }
 
 console.log(depthFirstSearch(graph, 'a'));

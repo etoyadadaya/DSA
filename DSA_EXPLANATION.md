@@ -67,3 +67,13 @@ The DFS algorithm works as follows:
 #### The space complexity of the algorithm is O(V).
 #### DFS Algorithm Applications:
 > * For finding the path, To test if the graph is bipartite,For finding the strongly connected components of a graph, For detecting cycles in a graph.
+
+# Dijkstra Algorithm:
+
+> Dijkstra's Algorithm works on the basis that any subpath B -> D of the shortest path A -> D between vertices A and D is also the shortest path between vertices B and D.
+> Djikstra used this property in the opposite direction i.e we overestimate the distance of each vertex from the starting vertex. Then we visit each node and its neighbors to find the shortest subpath to those neighbors.
+> The algorithm uses a greedy approach in the sense that we find the next best solution hoping that the end result is the best solution for the whole problem.
+#### Time Complexity: O(E Log V), where E is the number of edges and V is the number of vertices.
+#### Space Complexity: O(V).
+#### Dijkstra Algorithm Applications:
+> * To find the shortest path, In social networking applications, In a telephone network, To find the locations in the map

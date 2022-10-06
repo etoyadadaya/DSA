@@ -1,3 +1,16 @@
+// Graph Initialization
+
+const graph: any = {};
+graph.a = ['b', 'c'];
+graph.b = ['f'];
+graph.c = ['d', 'e'];
+graph.d = ['f'];
+graph.e = ['f'];
+graph.f = ['g'];
+
+
+// breadthFirstSearch which check for element in graph.
+
 const depthFirstSearch = (graph: any, start: any): any => {
     if (graph.length === 0) {
         return [];
@@ -16,15 +29,15 @@ const depthFirstSearch = (graph: any, start: any): any => {
         } else {
             const neighbors: string = graph[current];
             for (let i = neighbors.length - 1; i >= 0; i--) {
-            const neighbor = neighbors[i];
-            if (!visited.includes(neighbor)) {
-                stack.push(neighbor);
+            if (!visited.includes(neighbors[i])) {
+                stack.push(neighbors[i]);
                 }
             }
         }
+        []
     }
 
     return Array.from(visited);
 }
 
-console.log(depthFirstSearch(graph, 'a'))
+console.log(depthFirstSearch(graph, 'a'));

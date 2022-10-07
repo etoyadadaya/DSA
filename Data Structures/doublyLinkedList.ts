@@ -1,3 +1,5 @@
+//TODO PROBLEM IN CYCLES TO ARRAY AND FROM ARRAY!!!
+
 class node {
   public value: any;
   public next: any | null;

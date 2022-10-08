@@ -12,7 +12,7 @@ class node {
   }
 }
 
-class doubleLinkedList {
+class doublyLinkedList {
   public value: any;
   public head: any | null;
   public tail: any | null;
@@ -141,14 +141,14 @@ class doubleLinkedList {
   }
 }
 
-let myDoubleLinkedList = new doubleLinkedList(1);
-myDoubleLinkedList.push(2);
-myDoubleLinkedList.push(3);
-myDoubleLinkedList.pop();
-myDoubleLinkedList.unshift(4);
-myDoubleLinkedList.shift();
-myDoubleLinkedList.remove(1);
-myDoubleLinkedList.insert(2, 3);
-console.log(myDoubleLinkedList.get(1));
+let myDoublyLinkedList = new doublyLinkedList(1);
+myDoublyLinkedList.push(2);
+myDoublyLinkedList.push(3);
+myDoublyLinkedList.pop();
+myDoublyLinkedList.unshift(4);
+myDoublyLinkedList.shift();
+myDoublyLinkedList.remove(1);
+myDoublyLinkedList.insert(2, 3);
+console.log(myDoublyLinkedList.get(1));
 
-console.log(myDoubleLinkedList);
+console.log(myDoublyLinkedList);

@@ -34,7 +34,6 @@ const depthFirstSearch = (graph: any, start: any): any => {
                 }
             }
         }
-        []
     }
 
     return visited;

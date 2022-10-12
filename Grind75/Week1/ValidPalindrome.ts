@@ -1,23 +1,24 @@
 function isPalindrome(s: string): boolean {
   let cleanStr = cleanUp(s);
   return isPal(cleanStr);
-}
+};
 
-function cleanUp(str: string): string {
-  let newStr = "";
-  let char = "qwertyuiopasdfghjklzxcvbnm1234567890"
+function cleanUp(str: string) {
+  let char = "qwertyuiopasdfghjklzxcvbnm0123456789";
+
+  let newString = "";
 
   for (let i = 0; i < str.length; i++) {
-    let lowercase = str[i].toLowerCase();
+    let lowerCase = str[i].toLowerCase();
 
-    if (char.indexOf(lowercase)) {
-      newStr += lowercase;
+    if (char.indexOf(lowerCase) !== - 1) {
+      newString += lowerCase;
     }
   }
-  return newStr;
+  return newString;
 }
 
-function isPal(str: string): boolean {
+function isPal (str: string) {
   let left = 0;
   let right = str.length - 1;
 
@@ -26,7 +27,6 @@ function isPal(str: string): boolean {
     left++;
     right--;
   }
+
   return true;
 }
-
-

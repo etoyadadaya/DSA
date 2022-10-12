@@ -12,7 +12,9 @@ const radixSort = (arr: number[]) => {
 }
 
 const helper = (arr: number[], digit: number) => {
+  // @ts-ignore
   let countArray = new Array(10).fill(0);
+  // @ts-ignore
   let sortArray = new Array(arr.length).fill(0);
 
   let whichDigit = 10 ** digit;

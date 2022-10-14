@@ -1,7 +1,7 @@
 function isPalindrome(s: string): boolean {
   let cleanStr = cleanUp(s);
   return isPal(cleanStr);
-};
+}
 
 function cleanUp(str: string) {
   let char = "qwertyuiopasdfghjklzxcvbnm0123456789";

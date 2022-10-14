@@ -3,3 +3,6 @@
 
 ### WLACK ###
 .DS_Store
+
+### FLEET ###
+.fleet/

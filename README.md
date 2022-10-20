@@ -1,2 +1,1 @@
-# DSA and Grind75
-My DSA learning experience
+# Searching For the Holy Grail of Software Engineering
